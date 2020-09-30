@@ -19,28 +19,29 @@ body {
   color: #ffffff;
 }
 
+
 .page {
-  min-width: 1280px;
+  min-width: 320px;
   background-color: #2A2C2F;
   font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   color: #ffffff;
 }
 
 
-
 /* START BLOCK HEADER */
 
 .header {
-  max-width: 1184px;
+  max-width: 92.5%;
   display: grid;
   margin: 0 auto 56px;
   padding-top: 28px;
   grid-template-columns: 1fr max-content;
-  align-items: end;
+  align-items: center;
 }
 
 .header__logo {
-
+  width: 176px;
+  height: 52px;
 }
 
 .header__links {
@@ -50,9 +51,11 @@ body {
 }
 
 .header__lang-link {
+  margin: 18px 0 6px;
   font-size: 24px;
   line-height: 1.2;
   font-weight: normal;
+  text-align: right;
 }
 
 .header__lang-link:first-child {
@@ -67,26 +70,24 @@ body {
 
 
 .lead {
-  max-width: 984px;
+  max-width: 76.88%;
   margin: 0 auto 92px;
   display: flex;
   flex-direction: column;
 }
 
 .lead__title {
-  max-width: 720px;
+  max-width: 73.17%;
   margin: 0 auto 32px;
-
   font-size: 96px;
-  line-height: 100px;
+  line-height: 100%;
   font-weight: bold;
   text-align: center;
 }
 
 .lead__subtitle {
-  max-width: 640px;
+  max-width: 65.04%;
   margin: 0 auto 64px;
-
   font-size: 30px;
   line-height: 1.2;
   font-weight: normal;
@@ -94,12 +95,16 @@ body {
 }
 
 .lead__image {
+  object-fit: cover;
+
   max-width: 984px;
+  max-height: 615px;
+  margin: 0 auto;
 }
 
 .lead__caption {
-  max-width: 159px;
-  margin-right: auto;
+  max-width: 16.16%;
+  margin: 8px auto 0;
 
   font-size: 10px;
   line-height: 1.2;
@@ -118,7 +123,6 @@ body {
 .intro {
 max-width: 690px;
 margin: 0 auto 92px;
-
 }
 
 .intro__title {
@@ -241,35 +245,37 @@ margin-bottom: 80px;
 /* START BLOCK COVER */
 
 .cover {
-  /* position: relative; */
-  max-width: 1184px;
-  margin: 0 auto;
+max-width: 1184px;
+display: flex;
+flex-direction: column;
+align-content: center;
 
 }
 .cover__title {
-  /* position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  align-self: center; */
+  max-width: 560px;
+  margin: 0 auto 32px;
 
+  font-size: 72px;
+  line-height: 106%;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
 }
 
 .cover__subtitle {
-  /* position: absolute;
-  margin: auto auto;
-  left: 0;
-  right: 0;
+  max-width: 360px;
+  margin: 0 auto;
+
+  font-size: 18px;
+  line-height: 122%;
+  font-weight: normal;
   text-align: center;
-  align-self: center; */
-  z-index: 2;
+  z-index: 1;
 }
 
-/* .cover__overlay {
+.cover__overlay {
 
-} */
+}
 
 .cover__overlay:hover {
   color: #2A2C2F;
@@ -278,6 +284,7 @@ margin-bottom: 80px;
 
 .cover__background {
   width: 100%;
+  min-height: 740px;
   background-image: url('../images/cover-trains.jpg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -313,39 +320,111 @@ margin-bottom: 80px;
 
 /* END BLOCK FOOTER */
 
-@media screen and (max-width: 1024px) {
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
 
   .header {
-    max-width: 928px;
+    width: calc(100% - 96px);
     margin-bottom: 48px;
+  }
+
+  /* END BLOCK HEADER */
+
+  .lead {
+    width: calc(100% - 96px);
+  }
+
+  .lead__title {
+    width: calc(100% - 304px);
+  }
+
+  .lead__subtitle {
+    width: calc(100% - 384px);
+    margin: 0 auto 56px;
   }
 
 }
 
-@media screen and (max-width: 768px) {
+
+
+
+
+
+@media (max-width: 768px) {
 
   .header {
-    max-width: 720px;
+    width: calc(100% - 48px);
     margin-bottom: 48px;
   }
 
+  /* END BLOCK HEADER */
+
+  .lead {
+    width: 100%;
+    margin: 0 auto 88px;
+  }
+
+  .lead__title {
+    width: calc(100% - 48px);
+  }
+
+
+  .lead__subtitle {
+    width: calc(100% - 128px);
+    margin: 0 auto 56px;
+  }
+
 }
+
+
+
+
+
 
 @media screen and (max-width: 320px) {
 
   .header {
-    max-width: 288px;
+    width: calc(100% - 32px);
     padding-top: 16px;
-    margin-bottom: 48px;
+    margin: 0 auto 48px;
   }
 
+  .header__logo {
+    width: 142px;
+    height: 42px;
+  }
+
+  .header__lang-link {
+    margin: 14px 0 8px;
+  }
+
+/* END BLOCK HEADER */
+
+.lead {
+  max-width: 100%;
+  margin: 0 auto 64px;
+}
+
+.lead__title {
+  width: calc(100% - 32px);
+  margin: 0 auto 16px;
+  font-size: 40px;
+  line-height: 44px;
 }
 
 
-  /* .content__columns {
-      flex-direction: column;
-  }
-  .content__column {
-      width: 100%;
-      margin-bottom: 60px;
-  } */
+.lead__subtitle {
+  width: calc(100% - 32px);
+  margin: 0 auto 40px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+}
