@@ -1,8 +1,36 @@
 .place__paragraph {
-  max-width: 484px;
+  /* width: 49.19%; */
   margin: 0 0 24px;
   font-size: 18px;
   line-height: 29px;
   font-weight: normal;
   text-align: start;
+}
+
+@media (max-width: 1024px) {
+
+  .place__paragraph {
+    /* width: 49.14%; */
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .place__paragraph {
+    /* width: 48.89%; */
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .place__paragraph {
+    /* width: 90%; */
+    margin: 0 16px 24px;
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
