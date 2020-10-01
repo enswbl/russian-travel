@@ -1,7 +1,8 @@
 .lead__caption {
-  max-width: 16.16%;
-  margin: 8px auto 0;
-
+  /* width: 16.16%; */
+  margin-top: 8px;
+  display: flex;
+  align-self: flex-start;
   font-size: 10px;
   line-height: 1.2;
   font-weight: normal;
@@ -9,3 +10,29 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+
+@media (max-width: 1024px) {
+
+  .lead__caption {
+
+  }
+
+  }
+
+
+  @media (max-width: 768px) {
+
+    .lead__caption {
+      margin-left: 24px;
+    }
+
+  }
+
+  @media (max-width: 320px) {
+
+    .lead__caption {
+      margin-left: 16px;
+    }
+
+  }

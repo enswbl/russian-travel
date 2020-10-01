@@ -1,8 +1,34 @@
 .place__title {
-  max-width: 460px;
+  width: 46.75%;
   margin: 0;
-
   font-size: 72px;
   line-height: 76px;
   font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+
+  .place__title {
+    width: 47.41%;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .place__title {
+    width: 72.92%;
+  }
+
+}
+
+
+@media (max-width: 320px) {
+
+  .place__title {
+    width: 90%;
+    font-size: 32px;
+    line-height: 35px;
+  }
 }

@@ -1,6 +1,36 @@
 .footer {
-  max-width: 1184px;
+  width: 92.5%;
+  display: flex;
   margin: 92px auto 0;
   padding-bottom: 24px;
-  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+
+  .footer {
+    width: calc(100% - 96px);
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .footer {
+    width: calc(100% - 48px);
+    margin: 88px auto 0;
+  }
+
+}
+
+
+@media (max-width: 320px) {
+
+  .footer {
+    flex-direction: column;
+    margin: 64px auto 0;
+    margin-left: 16px;
+  }
+
 }

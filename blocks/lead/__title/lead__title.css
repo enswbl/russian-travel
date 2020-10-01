@@ -1,8 +1,35 @@
 .lead__title {
-  max-width: 73.17%;
+  width: 73.17%;
   margin: 0 auto 32px;
   font-size: 96px;
   line-height: 100px;
   font-weight: bold;
   text-align: center;
 }
+
+@media (max-width: 1024px) {
+
+  .lead__title {
+    width: calc(100% - 208px);
+  }
+
+  }
+
+  @media (max-width: 768px) {
+
+    .lead__title {
+      width: calc(100% - 48px);
+    }
+
+  }
+
+  @media (max-width: 320px) {
+
+    .lead__title {
+      width: calc(100% - 32px);
+      margin: 0 auto 16px;
+      font-size: 40px;
+      line-height: 44px;
+    }
+
+  }

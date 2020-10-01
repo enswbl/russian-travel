@@ -1,6 +1,31 @@
 .cover {
-max-width: 1184px;
-display: flex;
-flex-direction: column;
-align-content: center;
+width: 92.5%;
+margin: 0 auto;
+position: relative;
+}
+
+@media (max-width: 1024px) {
+
+  .cover {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .cover{
+
+  }
+
+}
+
+
+@media (max-width: 320px) {
+
+  .cover{
+
+  }
+
 }
