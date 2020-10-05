@@ -1,27 +1,32 @@
 .lead__title {
-  width: 73.17%;
+  width: 100%;
   margin: 0 auto 32px;
   font-size: 96px;
   line-height: 100px;
   font-weight: bold;
   text-align: center;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 1024px) {
 
   .lead__title {
-    width: calc(100% - 208px);
+    /* max-width: 77.59%; */
+    /* min-width: calc(100% - 304px); */
   }
 
+}
+
+
+@media (max-width: 768px) {
+
+  .lead__title {
+    /* min-width: 77.59%; */
+    /* min-width: calc(100% - 48px); */
   }
 
-  @media (max-width: 768px) {
+}
 
-    .lead__title {
-      width: calc(100% - 48px);
-    }
-
-  }
 
   @media (max-width: 320px) {
 

@@ -20,7 +20,7 @@
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 430px) {
 
   .places {
     width: 100%;
@@ -28,3 +28,13 @@
   }
 
 }
+
+/* @media (max-width: 320px) {
+
+  .places {
+    width: 100%;
+    margin: 64px auto;
+  }
+
+} */
+

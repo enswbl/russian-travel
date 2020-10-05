@@ -27,11 +27,13 @@ margin-bottom: 80px;
 @media (max-width: 430px) {
 
   .places__place {
-    grid-template-columns: minmax(min-content, max-content);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+    margin-bottom: 48px;
   }
 
 }
-
+/*
 @media (max-width: 320px) {
 
   .places__place {
@@ -40,4 +42,4 @@ margin-bottom: 80px;
     margin-bottom: 48px;
   }
 
-}
+} */

@@ -2,6 +2,7 @@
   width: 92.5%;
   display: grid;
   grid-template-columns: 1fr max-content;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto 56px;
   padding-top: 28px;
@@ -10,7 +11,8 @@
 @media (max-width: 1024px) {
 
   .header {
-    width: calc(100%-96px);
+   width: calc(100% - 96px);
+    /* width: 90.63%; */
     margin: 0 auto 48px;
   }
 
@@ -20,8 +22,8 @@
 @media (max-width: 768px) {
 
   .header {
-    width: calc(100%-48px);
-    margin: 0 auto 48px;
+    width: calc(100% - 48px);
+   /* width: 93.75%; */
   }
 
 }
@@ -30,9 +32,10 @@
 @media (max-width: 320px) {
 
   .header {
-    width: calc(100%-32px);
+    min-width: 288px;
+    /* min-width: calc(100% - 32px); */
+    margin: 0 16px 48px;
     padding-top: 16px;
-    margin: 0 auto 48px;
   }
 
 }
