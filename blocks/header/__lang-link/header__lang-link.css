@@ -6,10 +6,6 @@
   text-align: right;
 }
 
-.header__lang-link:first-child {
-  text-decoration-line: underline;
-}
-
 @media (max-width: 320px) {
 
   .header__lang-link {
