@@ -10,7 +10,7 @@
 @media (max-width: 1024px) {
 
   .photo-grid {
-    width: calc(100%- 96px);
+    width: calc(100% - 96px);
     grid-template-columns: repeat(3, minmax(min-content, max-content));
     gap: 14px;
   }
@@ -21,7 +21,7 @@
 @media (max-width: 768px) {
 
   .photo-grid {
-    width: calc(100%- 48px);
+    width: calc(100% - 48px);
     grid-template-columns: repeat(2, minmax(min-content, max-content));
   }
 
@@ -31,7 +31,7 @@
 @media (max-width: 320px) {
 
   .photo-grid {
-    width: calc(100%- 32px);
+    width: calc(100% - 32px);
     grid-template-columns: repeat(1, minmax(min-content, max-content));
     gap: 12px;
   }
