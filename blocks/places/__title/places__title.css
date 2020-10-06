@@ -1,4 +1,4 @@
-.place__title {
+.places__title {
   width: 46.75%;
   margin: 0;
   font-size: 72px;
@@ -8,7 +8,7 @@
 
 @media (max-width: 1024px) {
 
-  .place__title {
+  .places__title {
     width: 47.41%;
   }
 
@@ -16,7 +16,7 @@
 
 @media (max-width: 768px) {
 
-  .place__title {
+  .places__title {
     width: 72.92%;
     font-size: 42px;
     line-height: 46px;
@@ -26,7 +26,7 @@
 
 @media (max-width: 430px) {
 
-  .place__title {
+  .places__title {
     width: 90%;
     font-size: 32px;
     line-height: 35px;

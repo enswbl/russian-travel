@@ -1,10 +1,10 @@
-.place__paragraphs {
+.places__paragraphs {
 
 }
 /*
 @media (max-width: 1024px) {
 
-  .place__paragraphs {
+  .places__paragraphs {
     width: 49.14%;
 
   }
@@ -13,7 +13,7 @@
 
 @media (max-width: 768px) {
 
-  .place__paragraphs {
+  .places__paragraphs {
     width: 48.89%;
   }
 
@@ -21,7 +21,7 @@
 
 @media (max-width: 320px) {
 
-  .place__paragraphs {
+  .places__paragraphs {
     width: 90%;
   }
 } */
