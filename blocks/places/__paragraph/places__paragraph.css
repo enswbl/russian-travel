@@ -15,10 +15,9 @@
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
   .places__paragraph {
-    /* width: 48.89%; */
     font-size: 16px;
     line-height: 26px;
   }
