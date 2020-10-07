@@ -1,5 +1,5 @@
 .places__title {
-  width: 46.75%;
+  /* width: 46.75%; */
   margin: 0;
   font-weight: 900;
   font-size: 72px;
@@ -9,7 +9,7 @@
 @media (max-width: 1024px) {
 
   .places__title {
-    width: 47.41%;
+    /* width: 47.41%; */
   }
 
 }
@@ -26,7 +26,7 @@
 @media (max-width: 768px) {
 
   .places__title {
-    width: 72.92%;
+    /* width: 72.92%; */
     font-size: 42px;
     line-height: 46px;
   }
@@ -36,7 +36,7 @@
 @media (max-width: 620px) {
 
   .places__title {
-    width: 90%;
+    /* width: 90%; */
     font-size: 32px;
     line-height: 35px;
     margin-left: 16px;
